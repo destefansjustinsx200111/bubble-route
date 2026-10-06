@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BubbleRoute" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/bubble_primary</item>
+        <item name="colorOnPrimary">@color/bubble_text_on_dark</item>
+        <item name="colorPrimaryContainer">@color/bubble_primary_soft</item>
+        <item name="colorOnPrimaryContainer">@color/bubble_primary_dark</item>
+        <item name="colorSecondary">@color/bubble_accent</item>
+        <item name="colorOnSecondary">@color/bubble_text_on_dark</item>
+        <item name="colorTertiary">@color/bubble_secondary_dark</item>
+        <item name="android:colorBackground">@color/bubble_bg</item>
+        <item name="colorSurface">@color/bubble_surface</item>
+        <item name="colorOnSurface">@color/bubble_text</item>
+        <item name="colorOutline">@color/bubble_outline</item>
+        <item name="android:windowBackground">@drawable/bg_window_splash</item>
+        <item name="android:statusBarColor">@color/bubble_primary_dark</item>
+        <item name="android:navigationBarColor">@color/bubble_primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+    </style>
+</resources>

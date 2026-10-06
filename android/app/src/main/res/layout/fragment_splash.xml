@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView
+        android:id="@+id/splashBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.55"
+        android:contentDescription="@string/cd_splash_backdrop"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+
+    <View
+        android:id="@+id/splashScrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bubble_scrim" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_gutter"
+        android:paddingTop="@dimen/safe_top"
+        android:paddingRight="@dimen/screen_gutter"
+        android:paddingBottom="@dimen/safe_bottom">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="220dp">
+
+            <View
+                android:id="@+id/splashHalo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/decor_blob_cyan" />
+
+            <ImageView
+                android:id="@+id/splashBubbleLg"
+                android:layout_width="@dimen/bubble_splash_lg"
+                android:layout_height="@dimen/bubble_splash_lg"
+                android:layout_gravity="center"
+                android:contentDescription="@string/cd_splash_bubble"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_bubble_cyan" />
+
+            <ImageView
+                android:id="@+id/splashBubbleMd"
+                android:layout_width="@dimen/bubble_splash_md"
+                android:layout_height="@dimen/bubble_splash_md"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="4dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_bubble_pink" />
+
+            <ImageView
+                android:id="@+id/splashBubbleSm"
+                android:layout_width="@dimen/bubble_splash_sm"
+                android:layout_height="@dimen/bubble_splash_sm"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="6dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_bubble_yellow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:shadowColor="#4D00334F"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:text="@string/splash_title"
+            android:textAppearance="@style/TextAppearance.App.Display" />
+
+        <TextView
+            android:id="@+id/splashSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:letterSpacing="0.22"
+            android:text="@string/splash_subtitle"
+            android:textColor="@color/bubble_text_on_dark_muted"
+            android:textSize="@dimen/text_caption" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/splashProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:indicatorColor="@color/bubble_secondary"
+            app:indicatorSize="@dimen/progress_size"
+            app:trackColor="@color/bubble_track"
+            app:trackThickness="@dimen/progress_track" />
+
+        <TextView
+            android:id="@+id/splashLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_xl"
+            android:accessibilityLiveRegion="polite"
+            android:letterSpacing="0.18"
+            android:text="@string/splash_loading"
+            android:textColor="@color/bubble_text_on_dark_faint"
+            android:textSize="@dimen/text_label" />
+
+    </LinearLayout>
+
+</FrameLayout>

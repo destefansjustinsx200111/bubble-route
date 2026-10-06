@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/bubble_text_on_dark</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">@color/bubble_text</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/bubble_text</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <item name="android:textColor">@color/bubble_text</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/bubble_text_muted</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/bubble_text_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Numeric" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_numeric</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/bubble_primary</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_primary_height</item>
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/bubble_text_on_dark</item>
+        <item name="backgroundTint">@color/bubble_primary</item>
+        <item name="cornerRadius">@dimen/radius_tile</item>
+        <item name="elevation">@dimen/elevation_button</item>
+        <item name="rippleColor">@color/bubble_ripple</item>
+        <item name="iconSize">24dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">10dp</item>
+        <item name="iconTint">@color/bubble_text_on_dark</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_secondary_height</item>
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/bubble_primary_dark</item>
+        <item name="backgroundTint">@color/bubble_transparent</item>
+        <item name="strokeColor">@color/bubble_outline</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">@dimen/radius_card</item>
+        <item name="rippleColor">@color/bubble_ripple_dark</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">@color/bubble_primary_dark</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="iconSize">24dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconTint">@color/bubble_primary_dark</item>
+        <item name="cornerRadius">@dimen/radius_card</item>
+        <item name="rippleColor">@color/bubble_ripple_dark</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/chip_height</item>
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/bubble_text</item>
+        <item name="backgroundTint">@color/bubble_transparent</item>
+        <item name="strokeColor">@color/bubble_outline_soft</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">@dimen/radius_chip</item>
+        <item name="rippleColor">@color/bubble_ripple_dark</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardBackgroundColor">@color/bubble_surface</item>
+        <item name="strokeColor">@color/bubble_outline_soft</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.App.Card.Tile" parent="Widget.App.Card">
+        <item name="cardCornerRadius">@dimen/radius_tile</item>
+        <item name="cardElevation">@dimen/elevation_tile</item>
+    </style>
+
+    <style name="Theme.App.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

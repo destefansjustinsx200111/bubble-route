@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="safe_top">44dp</dimen>
+    <dimen name="safe_bottom">36dp</dimen>
+    <dimen name="screen_gutter">20dp</dimen>
+    <dimen name="tile_gutter">12dp</dimen>
+
+    <dimen name="radius_tile">28dp</dimen>
+    <dimen name="radius_card">24dp</dimen>
+    <dimen name="radius_pill">32dp</dimen>
+    <dimen name="radius_chip">20dp</dimen>
+
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_tile">6dp</dimen>
+    <dimen name="elevation_pill">8dp</dimen>
+    <dimen name="elevation_button">4dp</dimen>
+
+    <dimen name="button_primary_height">56dp</dimen>
+    <dimen name="button_result_height">60dp</dimen>
+    <dimen name="button_secondary_height">48dp</dimen>
+    <dimen name="chip_height">44dp</dimen>
+    <dimen name="touch_min">48dp</dimen>
+
+    <dimen name="bubble_splash_lg">132dp</dimen>
+    <dimen name="bubble_splash_md">84dp</dimen>
+    <dimen name="bubble_splash_sm">64dp</dimen>
+    <dimen name="bubble_tile">56dp</dimen>
+    <dimen name="bubble_tutorial">44dp</dimen>
+    <dimen name="badge_result">96dp</dimen>
+    <dimen name="badge_tile">28dp</dimen>
+    <dimen name="decor_blob">220dp</dimen>
+
+    <dimen name="header_height">72dp</dimen>
+    <dimen name="timer_bar_width">148dp</dimen>
+    <dimen name="timer_bar_height">8dp</dimen>
+    <dimen name="pill_height">72dp</dimen>
+    <dimen name="progress_size">44dp</dimen>
+    <dimen name="progress_track">4dp</dimen>
+
+    <dimen name="board_max_width">380dp</dimen>
+    <dimen name="board_padding">8dp</dimen>
+    <dimen name="board_stroke">2dp</dimen>
+    <dimen name="board_radius">24dp</dimen>
+
+    <dimen name="stat_dot">8dp</dimen>
+    <dimen name="stat_min_width">88dp</dimen>
+    <dimen name="level_dot">10dp</dimen>
+
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+
+    <dimen name="text_display">40sp</dimen>
+    <dimen name="text_headline">32sp</dimen>
+    <dimen name="text_title">26sp</dimen>
+    <dimen name="text_numeric">22sp</dimen>
+    <dimen name="text_subtitle">18sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_label">12sp</dimen>
+    <dimen name="text_caption">14sp</dimen>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game_gradient">
+
+    <ImageView
+        android:id="@+id/gameBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.22"
+        android:contentDescription="@string/cd_game_backdrop"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_game" />
+
+    <View
+        android:id="@+id/gameBlob"
+        android:layout_width="@dimen/decor_blob"
+        android:layout_height="@dimen/decor_blob"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/decor_blob_cyan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_strip"
+            android:elevation="@dimen/elevation_card"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/header_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_sm"
+            android:paddingTop="@dimen/safe_top"
+            android:paddingRight="@dimen/space_md"
+            android:paddingBottom="@dimen/space_sm">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gameBackButton"
+                style="@style/Widget.App.Button.Icon"
+                android:layout_width="@dimen/touch_min"
+                android:layout_height="@dimen/touch_min"
+                android:contentDescription="@string/cd_game_back"
+                app:icon="@drawable/ic_back" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_sm"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gameLevelLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.08"
+                    android:textColor="@color/bubble_text"
+                    android:textSize="@dimen/text_body"
+                    android:textStyle="bold" />
+
+                <com.bubbleroute.game.core.ui.SegmentedTimerBarView
+                    android:id="@+id/gameTimerBar"
+                    android:layout_width="@dimen/timer_bar_width"
+                    android:layout_height="@dimen/timer_bar_height"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:contentDescription="@string/cd_tide_bar"
+                    app:barAccent="@color/bubble_primary"
+                    app:barWarnAccent="@color/bubble_accent"
+                    app:segmentCount="12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gameScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:textAppearance="@style/TextAppearance.App.Numeric"
+                android:textSize="@dimen/text_subtitle" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/gameBoardArea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/space_md"
+            android:paddingTop="@dimen/space_md"
+            android:paddingRight="@dimen/space_md"
+            android:paddingBottom="@dimen/space_sm">
+
+            <com.bubbleroute.game.core.ui.RouteBoardView
+                android:id="@+id/gameBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/cd_board" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/gameHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:paddingLeft="@dimen/screen_gutter"
+            android:paddingRight="@dimen/screen_gutter"
+            android:paddingBottom="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.App.Label" />
+
+        <LinearLayout
+            android:id="@+id/gameControlPill"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pill_height"
+            android:layout_marginLeft="@dimen/screen_gutter"
+            android:layout_marginRight="@dimen/screen_gutter"
+            android:layout_marginBottom="@dimen/safe_bottom"
+            android:background="@drawable/pill_floating"
+            android:elevation="@dimen/elevation_pill"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_sm"
+            android:paddingRight="@dimen/space_sm">
+
+            <com.bubbleroute.game.core.ui.StatCardView
+                android:id="@+id/gamePairsCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:statAccent="@color/bubble_accent"
+                app:statCompact="true"
+                app:statLabel="@string/game_pairs_caption" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gameUndoButton"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_secondary_height"
+                android:layout_marginStart="@dimen/space_sm"
+                android:paddingLeft="@dimen/space_md"
+                android:paddingRight="@dimen/space_md"
+                android:textSize="@dimen/text_label"
+                android:text="@string/game_undo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gameRestartButton"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_secondary_height"
+                android:layout_marginStart="@dimen/space_sm"
+                android:paddingLeft="@dimen/space_md"
+                android:paddingRight="@dimen/space_md"
+                android:textSize="@dimen/text_label"
+                android:text="@string/game_restart" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

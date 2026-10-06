@@ -1,0 +1,54 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D aqua cyan soap bubble with a bright white highlight, a pink glossy ribbon curving through it, deep blue radial gradient background, centered, crisp, no text, no scene"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, deep teal and navy underwater lagoon, drifting translucent bubbles, soft caustic light rays, cinematic, dark, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, pale aqua and white soft lagoon water surface, pastel cyan and pink bubble bokeh, bright airy, 3D render, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, very soft blurred pale cyan water texture, low contrast, almost white, gentle gradient for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "sprite_bubble_cyan",
+      "type": "sprite",
+      "prompt": "One single glossy 3D cyan soap bubble, bright white specular highlight, centered icon, isolated on plain white, no other objects, no text"
+    },
+    {
+      "name": "sprite_bubble_pink",
+      "type": "sprite",
+      "prompt": "One single glossy 3D pink soap bubble, bright white specular highlight, centered icon, isolated on plain white, no other objects, no text"
+    },
+    {
+      "name": "sprite_bubble_yellow",
+      "type": "sprite",
+      "prompt": "One single glossy 3D sunny yellow soap bubble, bright white specular highlight, centered icon, isolated on plain white, no other objects, no text"
+    },
+    {
+      "name": "sprite_bubble_blue",
+      "type": "sprite",
+      "prompt": "One single glossy 3D soft blue soap bubble, bright white specular highlight, centered icon, isolated on plain white, no other objects, no text"
+    },
+    {
+      "name": "sprite_current_swirl",
+      "type": "sprite",
+      "prompt": "One single stylized water swirl whirlpool symbol, soft slate blue spiral, glossy 3D render, centered icon, isolated on plain white, no other objects, no text"
+    },
+    {
+      "name": "sprite_star_badge",
+      "type": "sprite",
+      "prompt": "One single glossy 3D golden star badge with a cyan rim, centered icon, isolated on plain white, no other objects, no text"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bubble_bg">#EFFBFF</color>
+    <color name="bubble_bg_deep">#D6F2FB</color>
+    <color name="bubble_bg_game">#E2F6FC</color>
+    <color name="bubble_surface">#FFFFFF</color>
+    <color name="bubble_surface_translucent">#F2FFFFFF</color>
+    <color name="bubble_surface_header">#CCFFFFFF</color>
+    <color name="bubble_primary">#00B4D8</color>
+    <color name="bubble_primary_dark">#00558B</color>
+    <color name="bubble_primary_mid">#0083A8</color>
+    <color name="bubble_primary_soft">#1A00B4D8</color>
+    <color name="bubble_accent">#FF70A6</color>
+    <color name="bubble_accent_soft">#1AFF70A6</color>
+    <color name="bubble_secondary">#FEE440</color>
+    <color name="bubble_secondary_dark">#D8A800</color>
+    <color name="bubble_blue_soft">#5AA9E6</color>
+    <color name="bubble_text">#243B53</color>
+    <color name="bubble_text_muted">#80243B53</color>
+    <color name="bubble_text_on_primary">#002A3A</color>
+    <color name="bubble_text_on_dark">#FFFFFF</color>
+    <color name="bubble_text_on_dark_muted">#B3E8FBFF</color>
+    <color name="bubble_text_on_dark_faint">#99E8FBFF</color>
+    <color name="bubble_outline">#3300B4D8</color>
+    <color name="bubble_outline_soft">#1F00B4D8</color>
+    <color name="bubble_disabled">#4D243B53</color>
+    <color name="bubble_scrim">#2600558B</color>
+    <color name="bubble_ripple">#33FFFFFF</color>
+    <color name="bubble_ripple_dark">#2600B4D8</color>
+    <color name="bubble_shadow">#14000000</color>
+    <color name="bubble_track">#3DFFFFFF</color>
+    <color name="bubble_grid_line">#1A00B4D8</color>
+    <color name="bubble_board_fill">#F2FFFFFF</color>
+    <color name="bubble_transparent">#00FFFFFF</color>
+</resources>

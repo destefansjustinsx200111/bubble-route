@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_result_gradient">
+
+    <View
+        android:id="@+id/resultBlob"
+        android:layout_width="@dimen/decor_blob"
+        android:layout_height="@dimen/decor_blob"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/decor_blob_yellow" />
+
+    <LinearLayout
+        android:id="@+id/resultContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_gutter"
+        android:paddingTop="@dimen/safe_top"
+        android:paddingRight="@dimen/screen_gutter"
+        android:paddingBottom="@dimen/safe_bottom">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/resultBadge"
+            android:layout_width="@dimen/badge_result"
+            android:layout_height="@dimen/badge_result"
+            android:contentDescription="@string/cd_result_badge"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_star_badge" />
+
+        <TextView
+            android:id="@+id/resultHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.App.Headline" />
+
+        <TextView
+            android:id="@+id/resultNewBest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:letterSpacing="0.14"
+            android:text="@string/result_new_best"
+            android:textColor="@color/bubble_accent"
+            android:textSize="@dimen/text_caption"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/resultStatRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:orientation="horizontal">
+
+            <com.bubbleroute.game.core.ui.StatCardView
+                android:id="@+id/resultScoreCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:statAccent="@color/bubble_primary"
+                app:statLabel="@string/result_score_caption" />
+
+            <Space
+                android:layout_width="@dimen/space_sm"
+                android:layout_height="1dp" />
+
+            <com.bubbleroute.game.core.ui.StatCardView
+                android:id="@+id/resultPairsCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:statAccent="@color/bubble_accent"
+                app:statLabel="@string/result_pairs_caption" />
+
+            <Space
+                android:layout_width="@dimen/space_sm"
+                android:layout_height="1dp" />
+
+            <com.bubbleroute.game.core.ui.StatCardView
+                android:id="@+id/resultTimeCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:statAccent="@color/bubble_secondary_dark"
+                app:statLabel="@string/result_time_caption" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/resultProgressCard"
+            style="@style/Widget.App.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tile_gutter">
+
+            <com.bubbleroute.game.core.ui.LagoonProgressView
+                android:id="@+id/resultLagoonProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_md" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/resultHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:text="@string/result_hint"
+            android:textAppearance="@style/TextAppearance.App.Label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resultPlayAgain"
+            style="@style/Widget.App.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_result_height"
+            android:text="@string/result_play_again"
+            app:icon="@drawable/ic_play" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resultMenuButton"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_secondary_height"
+            android:layout_marginTop="@dimen/space_md"
+            android:text="@string/result_menu"
+            app:icon="@drawable/ic_back" />
+
+    </LinearLayout>
+
+</FrameLayout>

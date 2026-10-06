@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/statCard"
+        style="@style/Widget.App.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/stat_min_width">
+
+        <LinearLayout
+            android:id="@+id/statContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_md"
+            android:paddingTop="@dimen/space_sm"
+            android:paddingRight="@dimen/space_md"
+            android:paddingBottom="@dimen/space_sm">
+
+            <View
+                android:id="@+id/statDot"
+                android:layout_width="@dimen/stat_dot"
+                android:layout_height="@dimen/stat_dot"
+                android:layout_marginBottom="@dimen/space_xs"
+                android:background="@drawable/dot_accent" />
+
+            <TextView
+                android:id="@+id/statValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.App.Numeric" />
+
+            <TextView
+                android:id="@+id/statLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.App.Label" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</merge>

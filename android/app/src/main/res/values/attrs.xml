@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatCardView">
+        <attr name="statLabel" format="string" />
+        <attr name="statValue" format="string" />
+        <attr name="statAccent" format="color" />
+        <attr name="statCompact" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedTimerBarView">
+        <attr name="segmentCount" format="integer" />
+        <attr name="barProgress" format="float" />
+        <attr name="barAccent" format="color" />
+        <attr name="barWarnAccent" format="color" />
+    </declare-styleable>
+</resources>

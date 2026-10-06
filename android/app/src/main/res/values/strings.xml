@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bubble Route</string>
+
+    <string name="splash_title">BUBBLE ROUTE</string>
+    <string name="splash_subtitle">LINK THE LAGOON</string>
+    <string name="splash_loading">LOADING</string>
+    <string name="cd_splash_backdrop">Lagoon of floating bubbles</string>
+    <string name="cd_splash_bubble">Aqua route bubble</string>
+
+    <string name="menu_title">BUBBLE ROUTE</string>
+    <string name="menu_hint">TAP TWO MATCHING BUBBLES TO LINK THEM</string>
+    <string name="menu_play">PLAY</string>
+    <string name="menu_tutorial">TUTORIAL</string>
+    <string name="menu_level_caption">LAGOON</string>
+    <string name="menu_best_caption">BEST ROUTE</string>
+    <string name="menu_mode_classic">CLASSIC</string>
+    <string name="menu_mode_challenge">CHALLENGE</string>
+    <string name="menu_mode_caption">TIDE MODE</string>
+    <string name="cd_menu_backdrop">Soft lagoon water</string>
+    <string name="cd_menu_play_bubble">Aqua lagoon bubble</string>
+    <string name="cd_best_badge">Best route badge</string>
+
+    <string name="game_level_label">LAGOON %1$d</string>
+    <string name="game_score_value">%1$s</string>
+    <string name="game_pairs_caption">PAIRS</string>
+    <string name="game_pairs_value">%1$d / %2$d</string>
+    <string name="game_undo">UNDO</string>
+    <string name="game_restart">RESTART</string>
+    <string name="game_hint_idle">TAP A BUBBLE TO START A ROUTE</string>
+    <string name="game_hint_selected">NOW TAP ITS TWIN</string>
+    <string name="game_hint_blocked">NO CLEAR ROUTE - TRY UNDO</string>
+    <string name="game_back">MENU</string>
+    <string name="cd_game_backdrop">Calm lagoon water</string>
+    <string name="cd_game_back">Back to the lagoon map</string>
+    <string name="cd_board">Route board with floating bubbles</string>
+    <string name="cd_tide_bar">Tide timer</string>
+    <string name="state_tide_calm">Tide is calm</string>
+    <string name="state_tide_rising">Tide is rising</string>
+    <string name="state_selected">Selected</string>
+    <string name="state_not_selected">Not selected</string>
+    <string name="state_undo_ready">Undo available</string>
+    <string name="state_undo_empty">Nothing to undo</string>
+
+    <string name="result_win">LAGOON LINKED</string>
+    <string name="result_lose">TIDE RAN OUT</string>
+    <string name="result_score_caption">SCORE</string>
+    <string name="result_pairs_caption">PAIRS</string>
+    <string name="result_time_caption">TIME LEFT</string>
+    <string name="result_time_value">%1$d:%2$02d</string>
+    <string name="result_new_best">NEW BEST ROUTE</string>
+    <string name="result_hint">NEXT LAGOON IS DEEPER</string>
+    <string name="result_play_again">PLAY AGAIN</string>
+    <string name="result_menu">MENU</string>
+    <string name="cd_result_badge">Lagoon star badge</string>
+
+    <string name="tutorial_title">HOW ROUTES WORK</string>
+    <string name="tutorial_step_one">TAP A BUBBLE</string>
+    <string name="tutorial_step_two">TAP ITS TWIN</string>
+    <string name="tutorial_step_three">AVOID THE SWIRLS</string>
+    <string name="tutorial_body_one">The first tap arms a route and lights up every matching bubble on the board.</string>
+    <string name="tutorial_body_two">The lagoon lays the shortest clean path between the two bubbles and they pop together.</string>
+    <string name="tutorial_body_three">Swirling currents are closed water. Routes bend around them, so link order decides the lagoon.</string>
+    <string name="tutorial_got_it">GOT IT</string>
+    <string name="cd_tutorial_bubble_one">Cyan bubble</string>
+    <string name="cd_tutorial_bubble_two">Pink bubble</string>
+    <string name="cd_tutorial_bubble_three">Swirling current</string>
+    <string name="exit_confirm">PRESS BACK AGAIN TO EXIT</string>
+</resources>
